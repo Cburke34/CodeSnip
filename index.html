@@ -1,0 +1,276 @@
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+
+        <link href="css/responsive-fonts.css" rel="stylesheet" type="text/css">
+        <link href="css/code-snip.css" rel="stylesheet" type="text/css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        
+        <script src="js/code-snip.js">
+        </script>
+    </head>
+
+    
+    <body>
+        
+        <div class="overlay">
+            <div class="newThumbnailInfoCont">
+                <div class="newSectionCont">
+                    <p class="f-sm newThumbnailText">Header:</p>
+                    <textarea maxlength="75" placeholder="Header Goes Here!" class="f-xs newInsertText newHeader"></textarea>
+                </div>
+                <div class="newSectionCont">
+                    <p class="f-sm newThumbnailText">Description:</p>
+                    <textarea placeholder="Description Goes Here!" class="f-xs newInsertText newDescription"></textarea>
+                </div>
+                <div class="newSectionCont">
+                    <p class="f-sm newThumbnailText">Code Tags:</p>
+                    <div class="codeTagCont">
+                        <img src="images/htmlLogo.png" class="codeLogo"/>
+                        <img src="images/bootstrapLogo.png" class="codeLogo"/>
+                        <img src="images/jQueryLogo.png" class="codeLogo"/>
+                        <img src="images/reactLogo.png" class="codeLogo"/>
+                        <img src="images/nodeLogo.png" class="codeLogo"/>
+                        <img src="images/vueLogo.png" class="codeLogo"/>
+                        <img src="images/angularLogo.png" class="codeLogo"/>
+                    </div>
+                </div>
+                <div class="newSectionCont">
+                    <p class="f-sm newThumbnailText">Defects:</p>
+                    <textarea maxlength="125" placeholder="Defects Go Here!" class="f-xs newInsertText newDefects"></textarea>
+                </div>
+            </div>
+            <div class="newThumbnailCodeCont">
+                <div class="newSnippetSelectorCont">
+                    <p class="f-lg snippetSelector newSnippetSelector">HTML</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">CSS</p>
+<!--
+                    <p class="f-lg snippetSelector newSnippetSelector">JS</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">BOOTSTRAP</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">JQUERY</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">REACT</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">NODE</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">VUE</p>
+                    <p class="f-lg snippetSelector newSnippetSelector">ANGULAR</p>
+-->
+                </div>
+                <textarea placeholder="Place Code Here!" maxlength="125" class="f-xs newInsertText newSnippet"></textarea>
+            </div>
+            <div class="buttonsCont">
+                <div class="buttonCont doneButton">
+                    <p class="f-sm buttonText doneText">Done</p>
+                </div>
+                <div class="buttonCont cancelButton">
+                    <p class="f-sm buttonText cancelText">Cancel</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="headerCont">
+            <div class="hTextCont">
+                <p class="f-lg hTitle">CodeSnip</p>
+                <p class="f-md hSecondary">A Repository for Reusable Code</p>
+            </div>
+            <div class="iconCont">
+                <div class="hAddCont">
+                    <p class="f-lg hAddText">Add</p>
+                    <img src="images/addIcon.png" class="hAddIcon"/>
+                </div>
+                <div class="hSearchCont">
+                    <p class="f-lg hSearchText">Search</p>
+                    <img src="images/headerSearchIcon.png" class="hSearchIcon"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="heroCont">
+            <div class="transitionGradient"></div>
+            <div class="codeTypeCont" id="cTC1">
+                <img src="images/htmlLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">HTML | CSS | JS</p>
+            </div>
+            <div class="codeTypeCont" id="cTC2">
+                <img src="images/bootstrapLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">Bootstrap</p>
+            </div>
+            <div class="codeTypeCont" id="cTC3">
+                <img src="images/jQueryLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">jQuery</p>
+            </div>
+            <div class="codeTypeCont" id="cTC4">
+                <img src="images/nodeLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">Node</p>
+            </div>
+            <div class="codeTypeCont" id="cTC5">
+                <img src="images/reactLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">React</p>
+            </div>
+            <div class="codeTypeCont" id="cTC6">
+                <img src="images/angularLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">Angular</p>
+            </div>
+            <div class="codeTypeCont" id="cTC7">
+                <img src="images/vueLogo.png" class="codeTypeLogo"/>
+                <p class="f-lg codeTypeText">Vue</p>
+            </div>
+        </div>
+        
+        <div class="contentCont">
+            <div class="searchCont">
+                <img class="searchIcon" src="images/mainSearchIcon.png"/>
+                <div class="searchTextCont">
+                   <input class="f-xxl searchInput" type="text" placeholder="Find CodeSnip">
+                </div>
+            </div>
+            <div class="filterCont">
+                <div class="filterInfoCont">
+                    <div class="f-sm filterInfo">Filter by Language, Framework, or Library</div>
+                    <div class="codeLogosCont">
+                        <img src="images/htmlLogo.png" class="codeLogo"/>
+                        <img src="images/bootstrapLogo.png" class="codeLogo"/>
+                        <img src="images/jQueryLogo.png" class="codeLogo"/>
+                        <img src="images/reactLogo.png" class="codeLogo"/>
+                        <img src="images/nodeLogo.png" class="codeLogo"/>
+                        <img src="images/vueLogo.png" class="codeLogo"/>
+                        <img src="images/angularLogo.png" class="codeLogo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gridCont">
+            
+            
+            
+            
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Hello I Am A Heading</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam urna sed nibh fermentum, a mattis purus feugiat. Nunc id massa vehicula mi blandit semper ut ac orci. Donec feugiat, purus id sollicitudin imperdiet, ex erat euismod lacus, ut consectetur nulla sapien sed est. Praesent massa purus, pretium id enim nec, fermentum sodales velit. In hac habitasse platea dictumst. Morbi in metus eget nulla eleifend convallis. Nullam malesuada a metus tempus porttitor. Duis a ultricies velit.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/bootstrapLogo.png" class="tag"/>
+                    <img src="images/angularLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/setting-responsive-widths.jpg" class="tImage"/>
+                <p class="f-md theading">Setting Responsive Widths</p>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    By creating a container using a percent width that is less than 100, you can then add equal padding to either side to ensure that the content within that container will always have a decent amount of spacing. The amount of spacing will differ between devices when using percents. Note that this works best when applying the width and padding to parent container, rather than the children.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/htmlLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Blah Blah Blah</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/jQueryLogo.png" class="tag"/>
+                    <img src="images/reactLogo.png" class="tag"/>
+                    <img src="images/nodeLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Hello I Am A Heading</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam urna sed nibh fermentum, a mattis purus feugiat. Nunc id massa vehicula mi blandit semper ut ac orci. Donec feugiat, purus id sollicitudin imperdiet, ex erat euismod lacus, ut consectetur nulla sapien sed est. Praesent massa purus, pretium id enim nec, fermentum sodales velit. In hac habitasse platea dictumst. Morbi in metus eget nulla eleifend convallis. Nullam malesuada a metus tempus porttitor. Duis a ultricies velit.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/bootstrapLogo.png" class="tag"/>
+                    <img src="images/angularLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Hello I Am A Heading</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam urna sed nibh fermentum, a mattis purus feugiat. Nunc id massa vehicula mi blandit semper ut ac orci. Donec feugiat, purus id sollicitudin imperdiet, ex erat euismod lacus, ut consectetur nulla sapien sed est. Praesent massa purus, pretium id enim nec, fermentum sodales velit. In hac habitasse platea dictumst. Morbi in metus eget nulla eleifend convallis. Nullam malesuada a metus tempus porttitor. Duis a ultricies velit.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/bootstrapLogo.png" class="tag"/>
+                    <img src="images/angularLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Hello I Am A Heading</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam urna sed nibh fermentum, a mattis purus feugiat. Nunc id massa vehicula mi blandit semper ut ac orci. Donec feugiat, purus id sollicitudin imperdiet, ex erat euismod lacus, ut consectetur nulla sapien sed est. Praesent massa purus, pretium id enim nec, fermentum sodales velit. In hac habitasse platea dictumst. Morbi in metus eget nulla eleifend convallis. Nullam malesuada a metus tempus porttitor. Duis a ultricies velit.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/bootstrapLogo.png" class="tag"/>
+                    <img src="images/angularLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Hello I Am A Heading</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam urna sed nibh fermentum, a mattis purus feugiat. Nunc id massa vehicula mi blandit semper ut ac orci. Donec feugiat, purus id sollicitudin imperdiet, ex erat euismod lacus, ut consectetur nulla sapien sed est. Praesent massa purus, pretium id enim nec, fermentum sodales velit. In hac habitasse platea dictumst. Morbi in metus eget nulla eleifend convallis. Nullam malesuada a metus tempus porttitor. Duis a ultricies velit.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/bootstrapLogo.png" class="tag"/>
+                    <img src="images/angularLogo.png" class="tag"/>
+                </div>
+            </div>
+            <div class="thumbnailCont">
+                <img src="images/heroBG.png" class="tImage"/>
+                <div class="f-md theading">Hello I Am A Heading</div>
+                <div class="f-sm module fade">
+                    <p class="f-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam blandit lorem, id vulputate magna. Cras mattis ultrices est quis consequat. Quisque quis finibus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam urna sed nibh fermentum, a mattis purus feugiat. Nunc id massa vehicula mi blandit semper ut ac orci. Donec feugiat, purus id sollicitudin imperdiet, ex erat euismod lacus, ut consectetur nulla sapien sed est. Praesent massa purus, pretium id enim nec, fermentum sodales velit. In hac habitasse platea dictumst. Morbi in metus eget nulla eleifend convallis. Nullam malesuada a metus tempus porttitor. Duis a ultricies velit.
+                    </p>
+                </div>
+                <div class="tagCont">
+                    <img src="images/bootstrapLogo.png" class="tag"/>
+                    <img src="images/angularLogo.png" class="tag"/>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+<!--        End Grid-->
+        <div class="footerCont">
+            <div class="footerClaimCont">
+                <p class="f-md footerClaim">End of the Line...</p>
+            </div>
+            <div class="footerInfoCont">
+                <div class="footerLogo">
+                    <p class="f-lg hTitle">CodeSnip</p>
+                    <p class="f-md hSecondary">A Repository for Reusable Code</p>
+                </div>
+                <div class="footerToTopCont">
+                    <img class="toTopIcon" src="images/arrow.png">
+                    <p class="f-sm toTopText">Return To Top</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

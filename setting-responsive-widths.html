@@ -1,0 +1,88 @@
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+
+        <link href="css/responsive-fonts.css" rel="stylesheet" type="text/css">
+        <link href="css/code-snip.css" rel="stylesheet" type="text/css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        
+        <script src="js/code-snip.js">
+        </script>
+    </head>
+
+    
+    <body>
+        
+        <div class="headerCont">
+            <div class="hTextCont">
+                <img class="hArrow" src="images/arrow.png">
+                <p class="f-lg hTitle hTitle2">Return</p>
+            </div>
+        </div>
+        
+        <div class="heroCont2">
+            <div class="transitionGradient"></div>
+            
+        </div>
+        
+        <div class="contentCont">
+            <p class="heading">Setting Responsive Widths</p>
+            <p class="f-lg description">
+                By creating a container using a percent width that is less than 100, you can then add equal padding to either side to ensure that the content within that container will always have a decent amount of spacing. The amount of spacing will differ between devices when using percents. Note that this works best when applying the width and padding to parent container, rather than the children.
+            </p>
+            <p class="f-lg snipHeading">The Snip:</p>
+            <div class="snippetSelectorCont">
+                <p class="f-lg snippetSelector">HTML</p>
+                <p class="f-lg snippetSelector">CSS</p>
+            </div>
+            <div class="snippetCont">
+<!--Must be aligned like this to correctly preserve tab spacing in code snippets-->
+<p class="f-sm snippet">&lt;div class="cont"&gt;
+    &lt;div class="content"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</p>
+<p class="f-sm snippet">.cont{
+    width: 90%; /*  width must be less than 100%  */
+    height: auto; /*  height will be determined by contents  */
+    padding: 5%; /*  5% padding on left and right + 90% width makes 100%  */
+    
+    /*  you can set padding-top / padding-bottom afterwards if you want those adjusted  */
+}
+</p>
+                <div class="copyCont">
+                    <img src="images/copyIcon.png" class="copyIcon"/>
+                    <p class="f-md copyText">Copy</p>
+                </div>
+            </div>
+            <p class="f-lg snipHeading">Defects:</p>
+            <ul>
+                <li class="f-lg description defects">
+                    Works best when used with percents, avoid pixel values in most cases.
+                </li>
+                <li class="f-lg description defects">
+                    Does not always work with IE. Sometimes padding is ignored if child also has padding based on percents.
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footerCont">
+            <div class="footerClaimCont">
+                <p class="f-md footerClaim">End of the Line...</p>
+            </div>
+            <div class="footerInfoCont">
+                <div class="footerLogo">
+                    <p class="f-lg hTitle">CodeSnip</p>
+                    <p class="f-md hSecondary">A Repository for Reusable Code</p>
+                </div>
+                <div class="footerToTopCont">
+                    <img class="toTopIcon" src="images/arrow.png">
+                    <p class="f-sm toTopText">Return To Top</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

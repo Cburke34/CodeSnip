@@ -1,0 +1,6 @@
+#E8F0F7 Header BG / Footer BG / active element
+#00010F Background / Header Elements
+#6D6E85 Search / Footer (end of line)
+#343540 Card Color / inactive element
+#BCBACC Code Snippet Container
+#c36df0 Highlight
